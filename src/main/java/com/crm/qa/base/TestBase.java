@@ -25,8 +25,8 @@ public class TestBase {
         try {
             prop = new Properties();
             FileInputStream in = new FileInputStream(
-                    "C:/Users/nitha/IdeaFrameworkProjects" +
-                            "/src/main/java/com/crm/qa/config/" +
+            		"C:\\Users\\sivaj\\git\\" +
+                            "FreeCRMProject/src/main/java/com/crm/qa/config/" +
                             "config.properties");
             prop.load(in);
         } catch (FileNotFoundException e) {
@@ -39,9 +39,9 @@ public class TestBase {
     public static void initialization() {
         String browserName = prop.getProperty("browser");
         if (browserName.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver",
-                    "C://innovapath//innovapath_selenium//chromedriver.exe");
-            driver = new ChromeDriver();
+        	System.setProperty("webdriver.chrome.driver", ".\\resources\\driver\\chromedriver.exe");
+			
+        	driver = new ChromeDriver();
         } else if (browserName.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver",
                     "C://innovapath//innovapath_selenium//geckodriver.exe");

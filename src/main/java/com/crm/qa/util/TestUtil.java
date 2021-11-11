@@ -34,7 +34,7 @@ public class TestUtil extends TestBase {
         Object[][] data = null;
         XSSFWorkbook wb = null;
         try {
-            wb = new XSSFWorkbook("C:\\Users\\nitha\\IdeaFrameworkProjects\\src\\main\\java\\com\\crm\\qa\\testData\\FreeCRMtestData.xlsx");
+            wb = new XSSFWorkbook("C:\\Users\\sivaj\\git\\FreeCRMProject\\src\\main\\java\\com\\crm\\qa\\testData\\FreeCRMtestData.xlsx");
             XSSFSheet sheet = wb.getSheet(sheetName);
             int rowsIndex = sheet.getLastRowNum();//return last raw index-index starts from 0
             Log.info("Total rows:" + rowsIndex);

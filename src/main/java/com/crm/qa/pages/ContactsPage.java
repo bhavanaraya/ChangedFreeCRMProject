@@ -35,7 +35,7 @@ public class ContactsPage extends TestBase {
     }
 
     public void verifyContactsByName(){
-        driver.findElement(By.xpath("//a[contains(text(),'tet ll')]")).click();
+        driver.findElement(By.xpath("//a[contains(text(),'Sam Mathew')]")).click();
 
 
        //driver.findElement(By.xpath("//a[text()='"+name+"']//parent::td[@class='datalistrow']"
